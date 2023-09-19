@@ -1,1 +1,1 @@
-#*Descrição do aplicativo*#
+*Descrição do aplicativo*
