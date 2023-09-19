@@ -1,6 +1,12 @@
 const express = require('express');
 const rotas = express.Router();
 
+rotas.get('/', (req, res) => {
+    res.send(
+        'Olá, seja bem-vindo a aplicação dindin, aqui você poderá organizar suas finanças pessoais.'
+    );
+});
+
 const rotasUsuarios = require('./rotasUsuarios');
 rotas.use(rotasUsuarios);
 
