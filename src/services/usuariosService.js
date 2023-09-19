@@ -56,6 +56,7 @@ const validarEmailUnicoService = async (email) => {
 };
 
 const loginService = async (dados) => {
+    
     validaPresencaDeCamposEPreenchimento(['email', 'senha'], dados);
 
     validaEmail(dados.email);
@@ -118,7 +119,7 @@ const atualizarUsuarioService = async (dados) => {
                 400
             );
     }
-    
+
     confirmaUsuarioExiste(id);
 
     const novaSenhaCriptografada = await criptografaSenha(senha);

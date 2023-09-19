@@ -1,19 +1,13 @@
-const { 
-        userBd,
-        hostBd, 
-        databaseBd,
-        passwordBd, 
-        portBd 
-} = require('./dadosSensiveis');
+require('dotenv').config();
 
 const { Pool } = require('pg');
 
 const conexaoBanco = new Pool({
-    user: userBd,
-    host: hostBd,
-    database: databaseBd,
-    password: passwordBd,
-    port: portBd
+    user: process.env.USER_DB,
+    host: process.env.HOST_DB,
+    database: process.env.DATABASE,
+    password: process.env.PASSWORD_DB,
+    port: process.env.PORT_DB
 });
 
 module.exports = conexaoBanco;
