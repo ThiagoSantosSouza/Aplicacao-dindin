@@ -1,7 +1,7 @@
 const pegaErro = require('../utils/lidaComErro');
 const validaPresencaDeCamposEPreenchimento = require('../utils/validaPresencaDeCamposEPreenchimento');
 
-const validarDataNoFormatoISO = require('../utils/ValidaDataNoFormatoISO');
+const validarDataNoFormatoISO = require('../utils/validaDataNoFormatoISO');
 
 const {
     buscarCategoriaPorIdRepository,

@@ -8,7 +8,7 @@
         "start": "node ./src/index.js"
     },
     "keywords": [],
-    "author": "Thiago S. D. SOUZA / GLAUBERTO J. D. Q. JÚNIOR",
+    "author": "Thiago SANTOS DE SOUZA",
     "license": "ISC",
     "dependencies": {
         "bcrypt": "^5.1.1",
